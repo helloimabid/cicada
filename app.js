@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (
         GOOGLE_SHEETS_CONFIG.WEBAPP_URL &&
         GOOGLE_SHEETS_CONFIG.WEBAPP_URL !==
-          "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
+          "https://script.google.com/macros/s/1vYdPWA9aVj554Z27LWOgE9eGLnQ4RzxBRMKUi95d5Fo/exec"
       ) {
         console.log(
           "Using Google Apps Script Web App:",
