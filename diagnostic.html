@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Diagnostic</title>
+    <style>
+        body {
+            font-family: monospace;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #00ff41;
+        }
+        button {
+            background: #00ff41;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #output {
+            background: #111;
+            border: 1px solid #00ff41;
+            padding: 15px;
+            margin: 20px 0;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .config-info {
+            background: #222;
+            border: 1px solid #555;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Sheets Integration Diagnostic</h1>
+    
+    <div class="config-info">
+        <h3>Current Configuration:</h3>
+        <p><strong>Web App URL:</strong> <span id="webapp-url"></span></p>
+        <p><strong>Spreadsheet ID:</strong> <span id="spreadsheet-id"></span></p>
+        <p><strong>Sheet Name:</strong> <span id="sheet-name"></span></p>
+    </div>
+    
+    <button onclick="testConnectivity()">Test Basic Connectivity</button>
+    <button onclick="testSimpleGet()">Test Simple GET</button>
+    <button onclick="testWithParameters()">Test with Parameters</button>
+    <button onclick="testPostMethod()">Test POST Method</button>
+    <button onclick="clearOutput()">Clear Output</button>
+    
+    <div id="output">Click a test button to start diagnosis...</div>
+
+    <script>
+        // Copy your configuration from index.html
+        const GOOGLE_SHEETS_CONFIG = {
+            WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbz3hZFFDJbtUaH1In6JrZ0tO2qdRxtbAzRdwS2CxWT7W6yg9UcVOchbXcet27eLrOV3/exec',
+            API_KEY: 'YOUR_API_KEY',
+            SPREADSHEET_ID: '1vYdPWA9aVj554Z27LWOgE9eGLnQ4RzxBRMKUi95d5Fo',
+            SHEET_NAME: 'Submissions'
+        };
+
+        // Display configuration
+        document.getElementById('webapp-url').textContent = GOOGLE_SHEETS_CONFIG.WEBAPP_URL;
+        document.getElementById('spreadsheet-id').textContent = GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID;
+        document.getElementById('sheet-name').textContent = GOOGLE_SHEETS_CONFIG.SHEET_NAME;
+
+        function log(message) {
+            const output = document.getElementById('output');
+            const timestamp = new Date().toLocaleTimeString();
+            output.textContent += `[${timestamp}] ${message}\n`;
+            output.scrollTop = output.scrollHeight;
+        }
+
+        function clearOutput() {
+            document.getElementById('output').textContent = '';
+        }
+
+        async function testConnectivity() {
+            clearOutput();
+            log('=== TESTING BASIC CONNECTIVITY ===');
+            
+            try {
+                log('Testing if the Web App URL is accessible...');
+                const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+                
+                log(`Response status: ${response.status}`);
+                log(`Response type: ${response.type}`);
+                
+                if (response.type === 'opaque') {
+                    log('✅ SUCCESS: Web App is accessible');
+                } else {
+                    log('⚠️ Unexpected response type');
+                }
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`);
+            }
+        }
+
+        async function testSimpleGet() {
+            clearOutput();
+            log('=== TESTING SIMPLE GET REQUEST ===');
+            
+            try {
+                log('Sending simple GET request...');
+                const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL + '?test=1', {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+                
+                log(`Response status: ${response.status}`);
+                log(`Response type: ${response.type}`);
+                
+                if (response.type === 'opaque') {
+                    log('✅ SUCCESS: GET request sent');
+                    log('Check Google Apps Script execution logs for this request');
+                } else {
+                    log('⚠️ Unexpected response');
+                }
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`);
+            }
+        }
+
+        async function testWithParameters() {
+            clearOutput();
+            log('=== TESTING WITH SUBMISSION PARAMETERS ===');
+            
+            const testData = {
+                userId: 'DIAGNOSTIC-TEST',
+                completionTime: '99:99',
+                timeTaken: 9999,
+                timestamp: new Date().toISOString(),
+                date: new Date().toLocaleDateString(),
+                timeOfDay: new Date().toLocaleTimeString()
+            };
+            
+            log('Test data: ' + JSON.stringify(testData, null, 2));
+            
+            try {
+                const params = new URLSearchParams(testData);
+                const getUrl = `${GOOGLE_SHEETS_CONFIG.WEBAPP_URL}?${params.toString()}`;
+                
+                log('GET URL length: ' + getUrl.length);
+                log('Sending GET with parameters...');
+                
+                const response = await fetch(getUrl, {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+                
+                log(`Response status: ${response.status}`);
+                log(`Response type: ${response.type}`);
+                
+                if (response.type === 'opaque') {
+                    log('✅ SUCCESS: Parameterized GET request sent');
+                    log('Check your Google Sheet for DIAGNOSTIC-TEST entry');
+                    log('Also check Google Apps Script execution logs');
+                } else {
+                    log('⚠️ Unexpected response');
+                }
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`);
+            }
+        }
+
+        async function testPostMethod() {
+            clearOutput();
+            log('=== TESTING POST METHOD ===');
+            
+            const testData = {
+                userId: 'POST-TEST',
+                completionTime: '88:88',
+                timeTaken: 8888,
+                timestamp: new Date().toISOString(),
+                date: new Date().toLocaleDateString(),
+                timeOfDay: new Date().toLocaleTimeString()
+            };
+            
+            try {
+                const params = new URLSearchParams(testData);
+                
+                log('Sending POST with form data...');
+                const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: params.toString()
+                });
+                
+                log(`Response status: ${response.status}`);
+                log(`Response type: ${response.type}`);
+                
+                if (response.type === 'opaque') {
+                    log('✅ SUCCESS: POST request sent');
+                    log('Check your Google Sheet for POST-TEST entry');
+                    log('Also check Google Apps Script execution logs');
+                } else {
+                    log('⚠️ Unexpected response');
+                }
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`);
+            }
+        }
+    </script>
+</body>
+</html>

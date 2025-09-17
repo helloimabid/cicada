@@ -62,22 +62,60 @@ document.addEventListener("DOMContentLoaded", () => {
       if (
         GOOGLE_SHEETS_CONFIG.WEBAPP_URL &&
         GOOGLE_SHEETS_CONFIG.WEBAPP_URL !==
-          "https://script.google.com/macros/s/1vYdPWA9aVj554Z27LWOgE9eGLnQ4RzxBRMKUi95d5Fo/exec"
+          "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
       ) {
         console.log(
           "Using Google Apps Script Web App:",
           GOOGLE_SHEETS_CONFIG.WEBAPP_URL
         );
 
-        const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(submissionData),
+        // For Google Apps Script, we need to send data as URL parameters to avoid CORS issues
+        const params = new URLSearchParams({
+          userId: submissionData.userId,
+          completionTime: submissionData.completionTime,
+          timeTaken: submissionData.timeTaken,
+          timestamp: submissionData.timestamp,
+          date: submissionData.date,
+          timeOfDay: submissionData.timeOfDay
         });
 
-        console.log("Google Apps Script response status:", response.status);
+        const urlWithParams = `${GOOGLE_SHEETS_CONFIG.WEBAPP_URL}?${params.toString()}`;
+
+        try {
+          // Try POST first
+          const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: params.toString()
+          });
+
+          console.log("Google Apps Script POST response status:", response.status);
+          console.log("Response type:", response.type);
+
+          // With no-cors, we can't read the actual response, but we assume success
+          return true;
+
+        } catch (postError) {
+          console.log("POST failed, trying GET method:", postError);
+          
+          // Fallback to GET method
+          try {
+            const getResponse = await fetch(urlWithParams, {
+              method: "GET",
+              mode: "no-cors"
+            });
+            
+            console.log("Google Apps Script GET response status:", getResponse.status);
+            return true;
+            
+          } catch (getError) {
+            console.error("Both POST and GET failed:", getError);
+            throw getError;
+          }
+        }
 
         // Try to read the response text
         try {

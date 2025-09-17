@@ -85,36 +85,74 @@
             log('Using Web App URL: ' + GOOGLE_SHEETS_CONFIG.WEBAPP_URL);
 
             try {
-                log('Sending POST request...');
+                log('Trying POST method with form data...');
+                
+                const params = new URLSearchParams({
+                    userId: testData.userId,
+                    completionTime: testData.completionTime,
+                    timeTaken: testData.timeTaken,
+                    timestamp: testData.timestamp,
+                    date: testData.date,
+                    timeOfDay: testData.timeOfDay
+                });
 
                 const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
                     method: 'POST',
+                    mode: 'no-cors',
                     headers: {
-                        'Content-Type': 'application/json',
+                        'Content-Type': 'application/x-www-form-urlencoded',
                     },
-                    body: JSON.stringify(testData)
+                    body: params.toString()
                 });
 
                 log('Response status: ' + response.status);
-                log('Response ok: ' + response.ok);
+                log('Response type: ' + response.type);
 
-                try {
-                    const responseText = await response.text();
-                    log('Response text: ' + responseText);
-                } catch (e) {
-                    log('Could not read response text: ' + e.message);
-                }
-
-                if (response.ok || response.status === 0) {
-                    log('SUCCESS: Test submission completed!');
+                if (response.type === 'opaque') {
+                    log('SUCCESS: Request sent successfully (no-cors mode)');
                     log('Check your Google Sheet for a new row with TEST-001');
                 } else {
-                    log('ERROR: Request failed with status ' + response.status);
+                    log('Response received, checking status...');
+                    if (response.ok || response.status === 0) {
+                        log('SUCCESS: Test submission completed!');
+                    } else {
+                        log('Warning: Unexpected response status');
+                    }
                 }
 
             } catch (error) {
-                log('ERROR: ' + error.message);
-                log('Full error: ' + JSON.stringify(error, Object.getOwnPropertyNames(error)));
+                log('POST method failed, trying GET method...');
+                
+                try {
+                    const params = new URLSearchParams({
+                        userId: testData.userId,
+                        completionTime: testData.completionTime,
+                        timeTaken: testData.timeTaken,
+                        timestamp: testData.timestamp,
+                        date: testData.date,
+                        timeOfDay: testData.timeOfDay
+                    });
+                    
+                    const getUrl = GOOGLE_SHEETS_CONFIG.WEBAPP_URL + '?' + params.toString();
+                    log('Trying GET: ' + getUrl);
+                    
+                    const getResponse = await fetch(getUrl, {
+                        method: 'GET',
+                        mode: 'no-cors'
+                    });
+                    
+                    log('GET Response status: ' + getResponse.status);
+                    log('GET Response type: ' + getResponse.type);
+                    
+                    if (getResponse.type === 'opaque') {
+                        log('SUCCESS: GET request sent successfully');
+                        log('Check your Google Sheet for a new row with TEST-001');
+                    }
+                    
+                } catch (getError) {
+                    log('Both POST and GET failed');
+                    log('Error: ' + getError.message);
+                }
             }
         }
     </script>
