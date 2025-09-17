@@ -31,11 +31,98 @@ document.addEventListener("DOMContentLoaded", () => {
   const leaderboardTableBody = document.querySelector(
     "#leaderboard-table tbody"
   );
+  const sheetsStatus = document.getElementById("sheets-status");
 
   let puzzlesData = {};
   let currentUser = {};
   let timerInterval;
   const TOTAL_TIME = 3600; // 1 hour in seconds
+
+  // --- GOOGLE SHEETS INTEGRATION ---
+  const submitToGoogleSheets = async (userId, completionTime, timeTaken) => {
+    console.log('Attempting to submit to Google Sheets:', { userId, completionTime, timeTaken });
+    
+    try {
+      const submissionData = {
+        userId: userId,
+        completionTime: completionTime,
+        timeTaken: timeTaken,
+        timestamp: new Date().toISOString(),
+        date: new Date().toLocaleDateString(),
+        timeOfDay: new Date().toLocaleTimeString()
+      };
+
+      console.log('Submission data prepared:', submissionData);
+
+      // Method 1: Using Google Apps Script Web App (Recommended)
+      if (GOOGLE_SHEETS_CONFIG.WEBAPP_URL && GOOGLE_SHEETS_CONFIG.WEBAPP_URL !== 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec') {
+        console.log('Using Google Apps Script Web App:', GOOGLE_SHEETS_CONFIG.WEBAPP_URL);
+        
+        const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(submissionData)
+        });
+        
+        console.log('Google Apps Script response status:', response.status);
+        
+        // Try to read the response text
+        try {
+          const responseText = await response.text();
+          console.log('Google Apps Script response:', responseText);
+        } catch (responseError) {
+          console.log('Could not read response text:', responseError);
+        }
+        
+        if (response.ok || response.status === 0) {
+          console.log('Submission recorded to Google Sheets successfully');
+          return true;
+        } else {
+          console.error('Google Apps Script responded with error status:', response.status);
+          return false;
+        }
+      }
+      
+      // Method 2: Direct API approach (requires CORS setup)
+      else if (GOOGLE_SHEETS_CONFIG.API_KEY && GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID) {
+        console.log('Using Direct API approach');
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${GOOGLE_SHEETS_CONFIG.SPREADSHEET_ID}/values/${GOOGLE_SHEETS_CONFIG.SHEET_NAME}:append?valueInputOption=RAW&key=${GOOGLE_SHEETS_CONFIG.API_KEY}`;
+        
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            values: [[
+              submissionData.userId,
+              submissionData.completionTime,
+              submissionData.timeTaken,
+              submissionData.timestamp,
+              submissionData.date,
+              submissionData.timeOfDay
+            ]]
+          })
+        });
+        
+        if (response.ok) {
+          console.log('Submission recorded to Google Sheets via API');
+          return true;
+        } else {
+          throw new Error('API request failed');
+        }
+      }
+      
+      console.warn('Google Sheets not configured - submission not recorded');
+      return false;
+      
+    } catch (error) {
+      console.error('Error submitting to Google Sheets:', error);
+      return false;
+    }
+  };
 
   // --- BASE32 DECODER ---
   // (JavaScript doesn't have a native Base32 decoder)
@@ -185,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  base64SubmitBtn.addEventListener("click", () => {
+  base64SubmitBtn.addEventListener("click", async () => {
     const userAnswer = base64Input.value.trim().toLowerCase();
     if (userAnswer === currentUser.base64_solution) {
       clearInterval(timerInterval);
@@ -197,13 +284,38 @@ document.addEventListener("DOMContentLoaded", () => {
         .toString()
         .padStart(2, "0");
       const s = (timeTaken % 60).toString().padStart(2, "0");
-      finalTimeDisplay.textContent = `${m}:${s}`;
+      const completionTimeFormatted = `${m}:${s}`;
+      finalTimeDisplay.textContent = completionTimeFormatted;
+
+      showSection(completionSection);
+
+      // Submit to Google Sheets
+      sheetsStatus.textContent = "📊 Recording submission...";
+      sheetsStatus.className = "";
+      
+      try {
+        const sheetsSuccess = await submitToGoogleSheets(
+          currentUser.id, 
+          completionTimeFormatted, 
+          timeTaken
+        );
+        
+        if (sheetsSuccess) {
+          sheetsStatus.textContent = "✅ Submission recorded successfully!";
+          sheetsStatus.className = "success-status";
+        } else {
+          sheetsStatus.textContent = "⚠️ Could not record to Google Sheets (not configured)";
+          sheetsStatus.className = "error-status";
+        }
+      } catch (error) {
+        console.error('Failed to record submission to Google Sheets:', error);
+        sheetsStatus.textContent = "❌ Failed to record submission";
+        sheetsStatus.className = "error-status";
+      }
 
       localStorage.removeItem("currentUser");
       localStorage.removeItem("startTime");
       localStorage.removeItem("timeLeft");
-
-      showSection(completionSection);
     } else {
       base64Error.textContent =
         "Incorrect sentence. Re-evaluate and try again.";

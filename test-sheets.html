@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #00ff41;
+        }
+        button {
+            background: #00ff41;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        #output {
+            background: #111;
+            border: 1px solid #00ff41;
+            padding: 15px;
+            margin: 20px 0;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Sheets Integration Test</h1>
+    
+    <p>Use this page to test if your Google Sheets integration is working.</p>
+    
+    <button onclick="testSubmission()">Test Submission</button>
+    <button onclick="clearOutput()">Clear Output</button>
+    
+    <div id="output">Click "Test Submission" to start the test...</div>
+
+    <script>
+        // Copy your configuration from index.html
+        const GOOGLE_SHEETS_CONFIG = {
+            WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbzxK4bPGTpocBZGoihr3hworCHT9Fpbg6PDdWvXLRLEDsmVNKxa-735-CSXiUHj98rs/exec',
+            API_KEY: 'YOUR_API_KEY',
+            SPREADSHEET_ID: 'YOUR_SPREADSHEET_ID',
+            SHEET_NAME: 'Submissions'
+        };
+
+        function log(message) {
+            const output = document.getElementById('output');
+            output.textContent += new Date().toLocaleTimeString() + ': ' + message + '\n';
+        }
+
+        function clearOutput() {
+            document.getElementById('output').textContent = '';
+        }
+
+        async function testSubmission() {
+            clearOutput();
+            log('Starting Google Sheets test...');
+            
+            const testData = {
+                userId: 'TEST-001',
+                completionTime: '05:23',
+                timeTaken: 323,
+                timestamp: new Date().toISOString(),
+                date: new Date().toLocaleDateString(),
+                timeOfDay: new Date().toLocaleTimeString()
+            };
+
+            log('Test data: ' + JSON.stringify(testData, null, 2));
+
+            if (!GOOGLE_SHEETS_CONFIG.WEBAPP_URL || GOOGLE_SHEETS_CONFIG.WEBAPP_URL.includes('YOUR_SCRIPT_ID')) {
+                log('ERROR: WEBAPP_URL not configured properly');
+                return;
+            }
+
+            log('Using Web App URL: ' + GOOGLE_SHEETS_CONFIG.WEBAPP_URL);
+
+            try {
+                log('Sending POST request...');
+                
+                const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testData)
+                });
+
+                log('Response status: ' + response.status);
+                log('Response ok: ' + response.ok);
+
+                try {
+                    const responseText = await response.text();
+                    log('Response text: ' + responseText);
+                } catch (e) {
+                    log('Could not read response text: ' + e.message);
+                }
+
+                if (response.ok || response.status === 0) {
+                    log('SUCCESS: Test submission completed!');
+                    log('Check your Google Sheet for a new row with TEST-001');
+                } else {
+                    log('ERROR: Request failed with status ' + response.status);
+                }
+
+            } catch (error) {
+                log('ERROR: ' + error.message);
+                log('Full error: ' + JSON.stringify(error, Object.getOwnPropertyNames(error)));
+            }
+        }
+    </script>
+</body>
+</html>

@@ -110,3 +110,15 @@ button:hover {
     background-color: #00ff41;
     color: #000;
 }
+
+#submission-status {
+    margin-top: 20px;
+}
+
+.success-status {
+    color: #00ff41;
+}
+
+.error-status {
+    color: #ff6b6b;
+}

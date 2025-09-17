@@ -9,6 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Google Sheets API Configuration -->
+    <script>
+        // Replace these with your actual Google Sheets details
+        const GOOGLE_SHEETS_CONFIG = {
+            // Your Google Apps Script Web App URL (you'll need to create this)
+            WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbzxK4bPGTpocBZGoihr3hworCHT9Fpbg6PDdWvXLRLEDsmVNKxa-735-CSXiUHj98rs/exec',
+            // Alternative: Direct API approach (requires API key)
+            API_KEY: 'YOUR_API_KEY',
+            SPREADSHEET_ID: '1vYdPWA9aVj554Z27LWOgE9eGLnQ4RzxBRMKUi95d5Fo',
+            SHEET_NAME: 'Submissions'
+        };
+    </script>
 </head>
 
 <body>
@@ -49,6 +62,9 @@
             <h1>Congratulations</h1>
             <p>You have successfully completed the challenge.</p>
             <p>Your final time: <strong id="final-time"></strong></p>
+            <div id="submission-status" class="code-block">
+                <p id="sheets-status">📊 Recording submission...</p>
+            </div>
         </div>
 
         <div id="timesup-section" class="hidden">
