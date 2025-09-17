@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3301 Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="login-section" class="active">
+            <h1>Enter Your Identifier</h1>
+            <input type="text" id="userId" placeholder="e.g., CICADA-001">
+            <button id="start-btn">Begin</button>
+            <p id="login-error" class="error"></p>
+        </div>
+
+        <div id="puzzle-section" class="hidden">
+            <div class="header">
+                <h2 id="welcome-message"></h2>
+                <div id="timer">01:00:00</div>
+            </div>
+
+            <div id="puzzle-1">
+                <h3>Stage 1: Primary Key</h3>
+                <p>Decode the following string (Base32):</p>
+                <div class="code-block" id="base32-string"></div>
+                <input type="text" id="base32-input" placeholder="Enter decoded key...">
+                <button id="submit-base32">Submit</button>
+                <p id="base32-error" class="error"></p>
+            </div>
+
+            <div id="puzzle-2" class="hidden">
+                <h3>Stage 2: Fragmented Message</h3>
+                <p>Decode the fragments (Base64) and arrange them into a coherent sentence.</p>
+                <div class="code-block" id="base64-strings"></div>
+                <input type="text" id="base64-input" placeholder="Enter the final sentence...">
+                <button id="submit-base64">Submit Final</button>
+                <p id="base64-error" class="error"></p>
+            </div>
+        </div>
+
+        <div id="completion-section" class="hidden">
+            <h1>Congratulations</h1>
+            <p>You have successfully completed the challenge.</p>
+            <p>Your final time: <strong id="final-time"></strong></p>
+        </div>
+
+        <div id="timesup-section" class="hidden">
+            <h1>Time has expired.</h1>
+            <p>The path has closed.</p>
+        </div>
+
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Identifier</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

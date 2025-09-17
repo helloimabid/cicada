@@ -1,0 +1,1250 @@
+{
+  "CICADA-001": {
+    "base32_encoded": "NBQXEYLTMUQG233PNZQWG2LOM4",
+    "base32_solution": "THEFIRSTKEY",
+    "base64_encoded": ["Zm91bmQ=", "dGhl", "cGF0aA==", "bm93"],
+    "base64_solution": "the path found now"
+  },
+  "CICADA-002": {
+    "base32_encoded": "M5XW6Z3MMUXSA3LBNF4GS3LZEA",
+    "base32_solution": "SECONDLAYER",
+    "base64_encoded": ["d2lzaWRvbQ==", "aXMA", "dGhl", "YmVnaW5uaW5n"],
+    "base64_solution": "wisdom is the beginning"
+  },
+  "CICADA-003": {
+    "base32_encoded": "NB2GC2LOMFZWIZLMNVXXE3TBNY",
+    "base32_solution": "ANOTHERSTEP",
+    "base64_encoded": ["ZGlzY292ZXI=", "dHJ1dGg=", "dGhl", "d2l0aGlu"],
+    "base64_solution": "discover the truth within"
+  },
+  "CICADA-004": {
+    "base32_encoded": "M5UGS23QMV3GI33HNRSQ",
+    "base32_solution": "RECURSION392",
+    "base64_encoded": [
+      "c29tZQ==",
+      "c2VjcmV0cw==",
+      "YXJl",
+      "bWVhbnQ=",
+      "dG8=",
+      "YmU=",
+      "Zm91bmQ="
+    ],
+    "base64_solution": "some secrets are meant to be found"
+  },
+  "CICADA-005": {
+    "base32_encoded": "KRUGK4TFMFZGW33SNFUQ",
+    "base32_solution": "FRACTAL698",
+    "base64_encoded": [
+      "ZGVjb25zdHJ1Y3Rpb24=",
+      "cmV2ZWFscw==",
+      "dGhl",
+      "Y29yZQ=="
+    ],
+    "base64_solution": "deconstruction reveals the core"
+  },
+  "CICADA-006": {
+    "base32_encoded": "L5WW6ZRAHBGGC3DFFY",
+    "base32_solution": "SILENCE415",
+    "base64_encoded": [
+      "ZXZlcnk=",
+      "YW5zd2Vy",
+      "YmVnaW5z",
+      "d2l0aA==",
+      "YQ==",
+      "cXVlc3Rpb24="
+    ],
+    "base64_solution": "every answer begins with a question"
+  },
+  "CICADA-007": {
+    "base32_encoded": "KN2XAZLHMZZGE6K7OQ",
+    "base32_solution": "EPHEMERAL119",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-008": {
+    "base32_encoded": "JVYGC5DMMNWGK4LUNY",
+    "base32_solution": "CONSENSUS576",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-009": {
+    "base32_encoded": "KZTS25LOMJSSA3LNFY",
+    "base32_solution": "ITERATION135",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-010": {
+    "base32_encoded": "LFWGS5LOMFXXE3TBNY",
+    "base32_solution": "PROTOCOL586",
+    "base64_encoded": [
+      "aW50ZWxsaWdlbmNl",
+      "aXM=",
+      "dGhl",
+      "YWJpbGl0eQ==",
+      "dG8=",
+      "YWRhcHQ="
+    ],
+    "base64_solution": "intelligence is the ability to adapt"
+  },
+  "CICADA-011": {
+    "base32_encoded": "K5SWIZLOOJSWC5TFFY",
+    "base32_solution": "LOGIC295",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-012": {
+    "base32_encoded": "L5WW6ZRAHBEG24TBOI",
+    "base32_solution": "SILENCE228",
+    "base64_encoded": [
+      "c2Vlaw==",
+      "a25vd2xlZGdl",
+      "aW4=",
+      "dGhl",
+      "YWJzZW5jZQ==",
+      "b2Y=",
+      "bGlnaHQ="
+    ],
+    "base64_solution": "seek knowledge in the absence of light"
+  },
+  "CICADA-013": {
+    "base32_encoded": "NB2XAZLOMRSWG4TFMY",
+    "base32_solution": "ANOMALY798",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-014": {
+    "base32_encoded": "MZXGI5BAMVXXE3TBNY",
+    "base32_solution": "SYMMETRY586",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-015": {
+    "base32_encoded": "KJSQWY3SMU2A",
+    "base32_solution": "DECRYPTE314",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-016": {
+    "base32_encoded": "KZQWG33SMF2A",
+    "base32_solution": "ITERATION104",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-017": {
+    "base32_encoded": "KRQWI3LBMUXA",
+    "base32_solution": "FRACTAL308",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-018": {
+    "base32_encoded": "LFWGS5LOMFXGC3DFFY",
+    "base32_solution": "PROTOCOL415",
+    "base64_encoded": [
+      "ZXZlcnk=",
+      "YW5zd2Vy",
+      "YmVnaW5z",
+      "d2l0aA==",
+      "YQ==",
+      "cXVlc3Rpb24="
+    ],
+    "base64_solution": "every answer begins with a question"
+  },
+  "CICADA-019": {
+    "base32_encoded": "M5XW65LPNYQHI5DFFY",
+    "base32_solution": "SEQUENCE415",
+    "base64_encoded": ["Zm9sbG93", "dGhl", "cHJpbWU=", "bnVtYmVycw=="],
+    "base64_solution": "follow the prime numbers"
+  },
+  "CICADA-020": {
+    "base32_encoded": "KRUGK4TFMFYHI5DFFY",
+    "base32_solution": "FRACTAL415",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-021": {
+    "base32_encoded": "MVXGC5LMONXSA2LOEA",
+    "base32_solution": "SOURCECODE234",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-022": {
+    "base32_encoded": "KNSWC4ZAONSXE2LBNR4A",
+    "base32_solution": "KEYSTONE174",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-023": {
+    "base32_encoded": "L5RWC3RAMNUXA",
+    "base32_solution": "SILENCE308",
+    "base64_encoded": [
+      "b25seQ==",
+      "dGhl",
+      "Y3VyaW91cw==",
+      "d2lsbA==",
+      "ZmluZA==",
+      "dGhl",
+      "d2F5"
+    ],
+    "base64_solution": "only the curious will find the way"
+  },
+  "CICADA-024": {
+    "base32_encoded": "KFQWY3TPOJXSA2LBNR4A",
+    "base32_solution": "CIPHER174",
+    "base64_encoded": ["YQ==", "cHV6emxl", "aXM=", "YQ==", "Y29udmVyc2F0aW9u"],
+    "base64_solution": "a puzzle is a conversation"
+  },
+  "CICADA-025": {
+    "base32_encoded": "KNSWC4ZAONSWE3TBNY",
+    "base32_solution": "KEYSTONE586",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-026": {
+    "base32_encoded": "KJSQWY3SMVZGKYLSE4",
+    "base32_solution": "DECRYPTE884",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-027": {
+    "base32_encoded": "K5SXE5DPNRWW63TFMU",
+    "base32_solution": "LOGIC970",
+    "base64_encoded": [
+      "cmVhbGl0eQ==",
+      "aXM=",
+      "YQ==",
+      "c2hhcmVk",
+      "aWxsdXNpb24="
+    ],
+    "base64_solution": "reality is a shared illusion"
+  },
+  "CICADA-028": {
+    "base32_encoded": "MJXXE5LJOJQWG2DFOI",
+    "base32_solution": "QUANTUM208",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-029": {
+    "base32_encoded": "M5XHI2DPOBQGC3DFFY",
+    "base32_solution": "SEQUENCE415",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-030": {
+    "base32_encoded": "JVYGC5DMMNUXEZLSFY",
+    "base32_solution": "CONSENSUS198",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-031": {
+    "base32_encoded": "L5RWC3RAMF2A",
+    "base32_solution": "SILENCE104",
+    "base64_encoded": [
+      "dGhl",
+      "dHJ1dGg=",
+      "aXM=",
+      "YQ==",
+      "bGFuZHNjYXBl",
+      "b2Y=",
+      "bWlycm9ycw=="
+    ],
+    "base64_solution": "the truth is a landscape of mirrors"
+  },
+  "CICADA-032": {
+    "base32_encoded": "K5SWIZLOOJUWY2LOMU",
+    "base32_solution": "LOGIC750",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-033": {
+    "base32_encoded": "KN2XAZLHMZZG65TBOI",
+    "base32_solution": "EPHEMERAL228",
+    "base64_encoded": [
+      "ZXZlcnk=",
+      "YW5zd2Vy",
+      "YmVnaW5z",
+      "d2l0aA==",
+      "YQ==",
+      "cXVlc3Rpb24="
+    ],
+    "base64_solution": "every answer begins with a question"
+  },
+  "CICADA-034": {
+    "base32_encoded": "LFWGS5LOMRUXA",
+    "base32_solution": "PROTOCOL308",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-035": {
+    "base32_encoded": "KNSWC4ZAORUGK4TFNQ",
+    "base32_solution": "KEYSTONE694",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-036": {
+    "base32_encoded": "MVXGC5LMONXSA2LOEA",
+    "base32_solution": "SOURCECODE234",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-037": {
+    "base32_encoded": "MZXGI5BAMVXXE3TBNY",
+    "base32_solution": "SYMMETRY586",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-038": {
+    "base32_encoded": "JVYGC5DMMNUXE2DFOI",
+    "base32_solution": "CONSENSUS208",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-039": {
+    "base32_encoded": "MVXGC5LMOJQWG2LUNY",
+    "base32_solution": "SOURCECODE576",
+    "base64_encoded": [
+      "b25seQ==",
+      "dGhl",
+      "Y3VyaW91cw==",
+      "d2lsbA==",
+      "ZmluZA==",
+      "dGhl",
+      "d2F5"
+    ],
+    "base64_solution": "only the curious will find the way"
+  },
+  "CICADA-040": {
+    "base32_encoded": "KRQWI3LBMUXA",
+    "base32_solution": "FRACTAL308",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-041": {
+    "base32_encoded": "L5ZGC5TFOJ2A",
+    "base32_solution": "SILENCE314",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-042": {
+    "base32_encoded": "KNSWC4ZAORQWG2LUNY",
+    "base32_solution": "KEYSTONE576",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-043": {
+    "base32_encoded": "KZTS25LOMVXXE3TBNY",
+    "base32_solution": "ITERATION586",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-044": {
+    "base32_encoded": "KZQWG33SE4",
+    "base32_solution": "ITERATION884",
+    "base64_encoded": [
+      "ZGVjb25zdHJ1Y3Rpb24=",
+      "cmV2ZWFscw==",
+      "dGhl",
+      "Y29yZQ=="
+    ],
+    "base64_solution": "deconstruction reveals the core"
+  },
+  "CICADA-045": {
+    "base32_encoded": "KJSQWY3SMU2A",
+    "base32_solution": "DECRYPTE314",
+    "base64_encoded": [
+      "c29tZQ==",
+      "c2VjcmV0cw==",
+      "YXJl",
+      "bWVhbnQ=",
+      "dG8=",
+      "YmU=",
+      "Zm91bmQ="
+    ],
+    "base64_solution": "some secrets are meant to be found"
+  },
+  "CICADA-046": {
+    "base32_encoded": "MJXXE5LJOJUXEZDFOI",
+    "base32_solution": "QUANTUM208",
+    "base64_encoded": [
+      "ZXZlcnk=",
+      "YW5zd2Vy",
+      "YmVnaW5z",
+      "d2l0aA==",
+      "YQ==",
+      "cXVlc3Rpb24="
+    ],
+    "base64_solution": "every answer begins with a question"
+  },
+  "CICADA-047": {
+    "base32_encoded": "KNSWC4ZAORUGC2LOMQ",
+    "base32_solution": "KEYSTONE756",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-048": {
+    "base32_encoded": "JVZWK4TOMVSSA2LOEA",
+    "base32_solution": "COMPILER234",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-049": {
+    "base32_encoded": "KNSWC4ZAORQGC3DFFY",
+    "base32_solution": "KEYSTONE415",
+    "base64_encoded": [
+      "c2Vlaw==",
+      "a25vd2xlZGdl",
+      "aW4=",
+      "dGhl",
+      "YWJzZW5jZQ==",
+      "b2Y=",
+      "bGlnaHQ="
+    ],
+    "base64_solution": "seek knowledge in the absence of light"
+  },
+  "CICADA-050": {
+    "base32_encoded": "KRQWI3LBMUZHI5DFFY",
+    "base32_solution": "FRACTAL415",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-051": {
+    "base32_encoded": "L5WW6ZRAHAQGC3DFFY",
+    "base32_solution": "SILENCE415",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-052": {
+    "base32_encoded": "KJSQWY3SMV2GSZDPMU",
+    "base32_solution": "DECRYPTE970",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-053": {
+    "base32_encoded": "L5WW6ZRAHBEG24TBOI",
+    "base32_solution": "SILENCE228",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-054": {
+    "base32_encoded": "L5RWC3RAMUXA",
+    "base32_solution": "SILENCE308",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-055": {
+    "base32_encoded": "KRUGK4TFMFYHI5DFFY",
+    "base32_solution": "FRACTAL415",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-056": {
+    "base32_encoded": "M5UGS23QMVWGY6BAMU",
+    "base32_solution": "RECURSION930",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-057": {
+    "base32_encoded": "KN2XAZLHMZZG65TBOI",
+    "base32_solution": "EPHEMERAL228",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-058": {
+    "base32_encoded": "KN2XAZLHMFZGS3TFFY",
+    "base32_solution": "EPHEMERAL415",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-059": {
+    "base32_encoded": "KRQWI3LBMU2A",
+    "base32_solution": "FRACTAL314",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-060": {
+    "base32_encoded": "KJSQWY3SMV2A",
+    "base32_solution": "DECRYPTE314",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-061": {
+    "base32_encoded": "KNSWC4ZAOJQXE2LBNR4A",
+    "base32_solution": "KEYSTONE174",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-062": {
+    "base32_encoded": "NBXXE43JOJUWY2LOMU",
+    "base32_solution": "ANOMALY750",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-063": {
+    "base32_encoded": "KNSWC4ZAORUXA",
+    "base32_solution": "KEYSTONE308",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-064": {
+    "base32_encoded": "MZXGI5BAMRSWG4TFMY",
+    "base32_solution": "SYMMETRY798",
+    "base64_encoded": [
+      "c29tZQ==",
+      "c2VjcmV0cw==",
+      "YXJl",
+      "bWVhbnQ=",
+      "dG8=",
+      "YmU=",
+      "Zm91bmQ="
+    ],
+    "base64_solution": "some secrets are meant to be found"
+  },
+  "CICADA-065": {
+    "base32_encoded": "LFWGS5LOMVTGQ4TSE4",
+    "base32_solution": "PROTOCOL884",
+    "base64_encoded": [
+      "c2Vlaw==",
+      "a25vd2xlZGdl",
+      "aW4=",
+      "dGhl",
+      "YWJzZW5jZQ==",
+      "b2Y=",
+      "bGlnaHQ="
+    ],
+    "base64_solution": "seek knowledge in the absence of light"
+  },
+  "CICADA-066": {
+    "base32_encoded": "MJXXE5LJOJQWG2DFOI",
+    "base32_solution": "QUANTUM208",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-067": {
+    "base32_encoded": "L5ZGC5TFOJ2A",
+    "base32_solution": "SILENCE314",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-068": {
+    "base32_encoded": "M5XHI2DPOBQGC3DFFY",
+    "base32_solution": "SEQUENCE415",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-069": {
+    "base32_encoded": "KJSQWY3SMV2A",
+    "base32_solution": "DECRYPTE314",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-070": {
+    "base32_encoded": "KN2XAZLHMFZGS3TFFY",
+    "base32_solution": "EPHEMERAL415",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-071": {
+    "base32_encoded": "KNSWC4ZAORUGC2LOMQ",
+    "base32_solution": "KEYSTONE756",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-072": {
+    "base32_encoded": "K5SXE5DPNRWW63TFMU",
+    "base32_solution": "LOGIC970",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-073": {
+    "base32_encoded": "L5ZGC5TFOJSSA3LNFY",
+    "base32_solution": "SILENCE135",
+    "base64_encoded": [
+      "c29tZQ==",
+      "c2VjcmV0cw==",
+      "YXJl",
+      "bWVhbnQ=",
+      "dG8=",
+      "YmU=",
+      "Zm91bmQ="
+    ],
+    "base64_solution": "some secrets are meant to be found"
+  },
+  "CICADA-074": {
+    "base32_encoded": "MVXGC5LMONXSA2LOEA",
+    "base32_solution": "SOURCECODE234",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-075": {
+    "base32_encoded": "KZQWG33SMF2A",
+    "base32_solution": "ITERATION104",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-076": {
+    "base32_encoded": "L5WW6ZRAHBEG24TBOI",
+    "base32_solution": "SILENCE228",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-077": {
+    "base32_encoded": "M5XHI2DPOJQWG2LUNY",
+    "base32_solution": "SEQUENCE576",
+    "base64_encoded": [
+      "bWVhbmluZw==",
+      "aXM=",
+      "ZW5jb2RlZA==",
+      "aW4=",
+      "dGhl",
+      "c3RydWN0dXJl"
+    ],
+    "base64_solution": "meaning is encoded in the structure"
+  },
+  "CICADA-078": {
+    "base32_encoded": "L5WW6ZRAHBQGC3DFFY",
+    "base32_solution": "SILENCE415",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-079": {
+    "base32_encoded": "MVWGY6BAMVXXE3TBNY",
+    "base32_solution": "SYMMETRY586",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-080": {
+    "base32_encoded": "MZXGI5BAMVXXE3TBNY",
+    "base32_solution": "SYMMETRY586",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-081": {
+    "base32_encoded": "K5SXE5DPNRWW63TFMU",
+    "base32_solution": "LOGIC970",
+    "base64_encoded": [
+      "dGhl",
+      "cGF0aA==",
+      "Zm9yd2FyZA==",
+      "aXM=",
+      "bm90",
+      "YWx3YXlz",
+      "c3RyYWlnaHQ="
+    ],
+    "base64_solution": "the path forward is not always straight"
+  },
+  "CICADA-082": {
+    "base32_encoded": "M5XHI2DPOJ2A",
+    "base32_solution": "SEQUENCE314",
+    "base64_encoded": [
+      "Y2hhb3M=",
+      "aXM=",
+      "b3JkZXI=",
+      "eWV0",
+      "dW5kZWNpcGhlcmVk"
+    ],
+    "base64_solution": "chaos is order yet undeciphered"
+  },
+  "CICADA-083": {
+    "base32_encoded": "KN2XAZLHMZZGE6K7OQ",
+    "base32_solution": "EPHEMERAL119",
+    "base64_encoded": [
+      "b25seQ==",
+      "dGhl",
+      "Y3VyaW91cw==",
+      "d2lsbA==",
+      "ZmluZA==",
+      "dGhl",
+      "d2F5"
+    ],
+    "base64_solution": "only the curious will find the way"
+  },
+  "CICADA-084": {
+    "base32_encoded": "KFQWY3TPOJXSA2LBNR4A",
+    "base32_solution": "CIPHER174",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-085": {
+    "base32_encoded": "LFWGS5LOMVTGQ4TSE4",
+    "base32_solution": "PROTOCOL884",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-086": {
+    "base32_encoded": "K5SWIZLOOJSWC5TFFY",
+    "base32_solution": "LOGIC295",
+    "base64_encoded": ["Zm9sbG93", "dGhl", "cHJpbWU=", "bnVtYmVycw=="],
+    "base64_solution": "follow the prime numbers"
+  },
+  "CICADA-087": {
+    "base32_encoded": "LFWGS5LOMVXXE3TBNY",
+    "base32_solution": "PROTOCOL586",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  },
+  "CICADA-088": {
+    "base32_encoded": "MVXGC5LMOJQWG2LUNY",
+    "base32_solution": "SOURCECODE576",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-089": {
+    "base32_encoded": "KNSWC4ZAORQWG2LUNY",
+    "base32_solution": "KEYSTONE576",
+    "base64_encoded": ["bGlnaHQ="],
+    "base64_solution": "light"
+  },
+  "CICADA-090": {
+    "base32_encoded": "MZXGI5BAMVXXE3TBNY",
+    "base32_solution": "SYMMETRY586",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-091": {
+    "base32_encoded": "M5XHI2DPOBQGC3DFFY",
+    "base32_solution": "SEQUENCE415",
+    "base64_encoded": [
+      "c29tZQ==",
+      "c2VjcmV0cw==",
+      "YXJl",
+      "bWVhbnQ=",
+      "dG8=",
+      "YmU=",
+      "Zm91bmQ="
+    ],
+    "base64_solution": "some secrets are meant to be found"
+  },
+  "CICADA-092": {
+    "base32_encoded": "L5ZGC5TFOJ2A",
+    "base32_solution": "SILENCE314",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-093": {
+    "base32_encoded": "L5RWC3RAMF2A",
+    "base32_solution": "SILENCE104",
+    "base64_encoded": ["bGlnaHQ="],
+    "base64_solution": "light"
+  },
+  "CICADA-094": {
+    "base32_encoded": "JVZWK4TOMVSSA2LOEA",
+    "base32_solution": "COMPILER234",
+    "base64_encoded": [
+      "dGhl",
+      "cXVpZXRlc3Q=",
+      "dm9pY2U=",
+      "b2Z0ZW4=",
+      "c3BlYWtz",
+      "dHJ1dGg="
+    ],
+    "base64_solution": "the quietest voice often speaks truth"
+  },
+  "CICADA-095": {
+    "base32_encoded": "KZTS25LOMJSSA3LNFY",
+    "base32_solution": "ITERATION135",
+    "base64_encoded": [
+      "c2Vlaw==",
+      "a25vd2xlZGdl",
+      "aW4=",
+      "dGhl",
+      "YWJzZW5jZQ==",
+      "b2Y=",
+      "bGlnaHQ="
+    ],
+    "base64_solution": "seek knowledge in the absence of light"
+  },
+  "CICADA-096": {
+    "base32_encoded": "L5WW6ZRAHBEG24TBOI",
+    "base32_solution": "SILENCE228",
+    "base64_encoded": [
+      "ZGVjb25zdHJ1Y3Rpb24=",
+      "cmV2ZWFscw==",
+      "dGhl",
+      "Y29yZQ=="
+    ],
+    "base64_solution": "deconstruction reveals the core"
+  },
+  "CICADA-097": {
+    "base32_encoded": "M5UGS23QMV3GI33HNRSQ",
+    "base32_solution": "RECURSION392",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-098": {
+    "base32_encoded": "KRUGK4TFMFYHI5DFFY",
+    "base32_solution": "FRACTAL415",
+    "base64_encoded": [
+      "dGhpbms=",
+      "b3V0c2lkZQ==",
+      "dGhl",
+      "Z2l2ZW4=",
+      "cGFyYW1ldGVycw=="
+    ],
+    "base64_solution": "think outside the given parameters"
+  },
+  "CICADA-099": {
+    "base32_encoded": "JVYGC5DMMNUXEZLSFY",
+    "base32_solution": "CONSENSUS198",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-100": {
+    "base32_encoded": "NB2XAZLOMRSWG4TFMY",
+    "base32_solution": "ANOMALY798",
+    "base64_encoded": [
+      "bG9vaw==",
+      "Zm9y",
+      "dGhl",
+      "cGF0dGVybg==",
+      "aW4=",
+      "dGhl",
+      "bm9pc2U="
+    ],
+    "base64_solution": "look for the pattern in the noise"
+  },
+  "CICADA-101": {
+    "base32_encoded": "KN2XAZLHMZZG65TBOI",
+    "base32_solution": "EPHEMERAL228",
+    "base64_encoded": [
+      "dGhlcmU=",
+      "aXM=",
+      "YQ==",
+      "Z2hvc3Q=",
+      "aW4=",
+      "dGhl",
+      "bWFjaGluZQ=="
+    ],
+    "base64_solution": "there is a ghost in the machine"
+  },
+  "CICADA-102": {
+    "base32_encoded": "KNSWC4ZAORUXA",
+    "base32_solution": "KEYSTONE308",
+    "base64_encoded": ["cXVlc3Rpb24=", "ZXZlcnl0aGluZw==", "eW91", "a25vdw=="],
+    "base64_solution": "question everything you know"
+  },
+  "CICADA-103": {
+    "base32_encoded": "LFWGS5LOMRUXA",
+    "base32_solution": "PROTOCOL308",
+    "base64_encoded": [
+      "dGhl",
+      "ZW5k",
+      "aXM=",
+      "bWVyZWx5",
+      "YQ==",
+      "bmV3",
+      "YmVnaW5uaW5n"
+    ],
+    "base64_solution": "the end is merely a new beginning"
+  }
+}
