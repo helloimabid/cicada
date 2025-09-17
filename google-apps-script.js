@@ -17,7 +17,7 @@ function doPost(e) {
 function doGet(e) {
   console.log("Received GET request");
   console.log("Parameters:", e.parameter);
-  
+
   return handleRequest(e);
 }
 
@@ -27,10 +27,10 @@ function handleRequest(e) {
   console.log("Request object:", JSON.stringify(e, null, 2));
   console.log("Spreadsheet ID being used:", SPREADSHEET_ID);
   console.log("Sheet name being used:", SHEET_NAME);
-  
+
   try {
     let data;
-    
+
     // Handle different types of data
     if (e.parameter && Object.keys(e.parameter).length > 0) {
       // URL parameters (GET) or form data (POST)
@@ -44,7 +44,7 @@ function handleRequest(e) {
       console.error("No data received in request");
       throw new Error("No data received");
     }
-    
+
     console.log("Processing data:", JSON.stringify(data, null, 2));
 
     // Ensure we have required fields
@@ -58,10 +58,10 @@ function handleRequest(e) {
     try {
       const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
       console.log("✅ Successfully opened spreadsheet");
-      
+
       let sheet = spreadsheet.getSheetByName(SHEET_NAME);
       console.log("Looking for sheet:", SHEET_NAME);
-      
+
       // Create the sheet if it doesn't exist
       if (!sheet) {
         console.log("Sheet not found, creating new sheet:", SHEET_NAME);
@@ -86,12 +86,12 @@ function handleRequest(e) {
 
       // Add the new submission
       const rowData = [
-        data.userId || 'MISSING',
-        data.completionTime || 'MISSING',
-        data.timeTaken || 'MISSING',
-        data.timestamp || 'MISSING',
-        data.date || 'MISSING',
-        data.timeOfDay || 'MISSING',
+        data.userId || "MISSING",
+        data.completionTime || "MISSING",
+        data.timeTaken || "MISSING",
+        data.timestamp || "MISSING",
+        data.date || "MISSING",
+        data.timeOfDay || "MISSING",
       ];
 
       console.log("Adding row data:", JSON.stringify(rowData));
@@ -107,14 +107,15 @@ function handleRequest(e) {
           success: true,
           message: "Submission recorded successfully",
           rowCount: rowCount,
-          data: rowData
+          data: rowData,
         })
       ).setMimeType(ContentService.MimeType.JSON);
-      
     } catch (spreadsheetError) {
       console.error("❌ Spreadsheet error:", spreadsheetError.toString());
       console.error("Stack trace:", spreadsheetError.stack);
-      throw new Error("Spreadsheet access failed: " + spreadsheetError.toString());
+      throw new Error(
+        "Spreadsheet access failed: " + spreadsheetError.toString()
+      );
     }
   } catch (error) {
     console.error("Error in handleRequest:", error);
@@ -123,5 +124,3 @@ function handleRequest(e) {
     ).setMimeType(ContentService.MimeType.JSON);
   }
 }
-
-

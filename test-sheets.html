@@ -86,7 +86,7 @@
 
             try {
                 log('Trying POST method with form data...');
-                
+
                 const params = new URLSearchParams({
                     userId: testData.userId,
                     completionTime: testData.completionTime,
@@ -122,7 +122,7 @@
 
             } catch (error) {
                 log('POST method failed, trying GET method...');
-                
+
                 try {
                     const params = new URLSearchParams({
                         userId: testData.userId,
@@ -132,23 +132,23 @@
                         date: testData.date,
                         timeOfDay: testData.timeOfDay
                     });
-                    
+
                     const getUrl = GOOGLE_SHEETS_CONFIG.WEBAPP_URL + '?' + params.toString();
                     log('Trying GET: ' + getUrl);
-                    
+
                     const getResponse = await fetch(getUrl, {
                         method: 'GET',
                         mode: 'no-cors'
                     });
-                    
+
                     log('GET Response status: ' + getResponse.status);
                     log('GET Response type: ' + getResponse.type);
-                    
+
                     if (getResponse.type === 'opaque') {
                         log('SUCCESS: GET request sent successfully');
                         log('Check your Google Sheet for a new row with TEST-001');
                     }
-                    
+
                 } catch (getError) {
                     log('Both POST and GET failed');
                     log('Error: ' + getError.message);

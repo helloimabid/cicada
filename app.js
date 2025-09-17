@@ -76,10 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
           timeTaken: submissionData.timeTaken,
           timestamp: submissionData.timestamp,
           date: submissionData.date,
-          timeOfDay: submissionData.timeOfDay
+          timeOfDay: submissionData.timeOfDay,
         });
 
-        const urlWithParams = `${GOOGLE_SHEETS_CONFIG.WEBAPP_URL}?${params.toString()}`;
+        const urlWithParams = `${
+          GOOGLE_SHEETS_CONFIG.WEBAPP_URL
+        }?${params.toString()}`;
 
         try {
           // Try POST first
@@ -89,28 +91,32 @@ document.addEventListener("DOMContentLoaded", () => {
             headers: {
               "Content-Type": "application/x-www-form-urlencoded",
             },
-            body: params.toString()
+            body: params.toString(),
           });
 
-          console.log("Google Apps Script POST response status:", response.status);
+          console.log(
+            "Google Apps Script POST response status:",
+            response.status
+          );
           console.log("Response type:", response.type);
 
           // With no-cors, we can't read the actual response, but we assume success
           return true;
-
         } catch (postError) {
           console.log("POST failed, trying GET method:", postError);
-          
+
           // Fallback to GET method
           try {
             const getResponse = await fetch(urlWithParams, {
               method: "GET",
-              mode: "no-cors"
+              mode: "no-cors",
             });
-            
-            console.log("Google Apps Script GET response status:", getResponse.status);
+
+            console.log(
+              "Google Apps Script GET response status:",
+              getResponse.status
+            );
             return true;
-            
           } catch (getError) {
             console.error("Both POST and GET failed:", getError);
             throw getError;
