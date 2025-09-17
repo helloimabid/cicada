@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             background: #0a0a0a;
             color: #00ff41;
         }
+
         button {
             background: #00ff41;
             color: #000;
@@ -21,6 +23,7 @@
             margin: 10px 0;
             cursor: pointer;
         }
+
         #output {
             background: #111;
             border: 1px solid #00ff41;
@@ -30,14 +33,15 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Google Sheets Integration Test</h1>
-    
+
     <p>Use this page to test if your Google Sheets integration is working.</p>
-    
+
     <button onclick="testSubmission()">Test Submission</button>
     <button onclick="clearOutput()">Clear Output</button>
-    
+
     <div id="output">Click "Test Submission" to start the test...</div>
 
     <script>
@@ -61,7 +65,7 @@
         async function testSubmission() {
             clearOutput();
             log('Starting Google Sheets test...');
-            
+
             const testData = {
                 userId: 'TEST-001',
                 completionTime: '05:23',
@@ -82,7 +86,7 @@
 
             try {
                 log('Sending POST request...');
-                
+
                 const response = await fetch(GOOGLE_SHEETS_CONFIG.WEBAPP_URL, {
                     method: 'POST',
                     headers: {
@@ -115,4 +119,5 @@
         }
     </script>
 </body>
+
 </html>
