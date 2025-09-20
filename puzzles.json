@@ -12,7 +12,7 @@
     "base64_solution": "wisdom is the beginning"
   },
   "CICADA-003": {
-    "base32_encoded": "NB2GC2LOMFZWIZLMNVXXE3TBNY",
+    "base32_encoded": "IFHE6VCIIVJFGVCFKA======",
     "base32_solution": "ANOTHERSTEP",
     "base64_encoded": ["ZGlzY292ZXI=", "dHJ1dGg=", "dGhl", "d2l0aGlu"],
     "base64_solution": "discover the truth within"
@@ -56,7 +56,7 @@
     "base64_solution": "every answer begins with a question"
   },
   "CICADA-007": {
-    "base32_encoded": "KN2XAZLHMZZGE6K7OQ",
+    "base32_encoded": "IVIEQRKNIVJECTBRGE4Q====",
     "base32_solution": "EPHEMERAL119",
     "base64_encoded": [
       "dGhl",
@@ -169,7 +169,7 @@
     "base64_solution": "the quietest voice often speaks truth"
   },
   "CICADA-016": {
-    "base32_encoded": "KZQWG33SMF2A",
+    "base32_encoded": "JFKEKUSBKREU6TRRGA2A====",
     "base32_solution": "ITERATION104",
     "base64_encoded": [
       "dGhpbms=",
@@ -344,7 +344,7 @@
     "base64_solution": "chaos is order yet undeciphered"
   },
   "CICADA-031": {
-    "base32_encoded": "L5RWC3RAMF2A",
+    "base32_encoded": "KNEUYRKOINCTCMBU",
     "base32_solution": "SILENCE104",
     "base64_encoded": [
       "dGhl",
